@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+:root {
+  --darkblue: rgb(52,74,139);
+  --broken-white: rgb(232,228,228);
+  --white: rgb(232,228,228);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  background-color: var(--darkblue);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  height: 500px;
+  gap: 100px;
+
+}
+
+.title, .hero, .content{
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.title-picture{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.title h1{
+  text-align: center;
+  font-weight: bold;
+  color: var(--darkblue);
+}
+
+.hero img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+.content{
+  width: 500px;
+  padding: 20px;
+}
+
+.title-input{
+  display: flex;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--darkblue);
+}
+
+.input{
+  margin: 10px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--darkblue);
+}
+
+.input-birth{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.input-birth p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-birth input{
+  display: flex;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 10px;
+  width: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: var(--broken-white);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  color: var(--darkblue);
+}
+
+.input-birth input:hover{
+  /* outline: 2px solid var(--darkblue); */
+  border: 2px solid var(--darkblue);
+}
+
+.input-birth input:focus{
+  outline: none;
+  border: 2px solid var(--darkblue);
+}
+
+.title-input img{
+  width: 50px;
+  border-radius: 20px;
+}
+
+.title-input h2{
+  margin-left: 10px;
+  margin-block: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.title-output img{
+  width: 50px;
+}
+
+.title-output{
+  display: flex;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--darkblue);
+}
+
+.title-output img{
+  width: 50px;
+  border-radius: 20px;
+}
+
+.title-output h2{
+  margin-left: 10px;
+  margin-block: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.output{
+  margin: 15px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--darkblue);
+}
+
+.output-birth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.output-birth span{
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--broken-white);
+}
+
+.output-birth h3{
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+small{
+  border: 1px;
+  height: 10px;
+  color: red;
+  font-size: 10px;
+}
+
+.submit-btn{
+  width: 100%;
+  background-color: var(--broken-white);
+  padding: 5px;
+  border: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  border: 2px solid var(--darkblue);
+}
+
+i{
+  font-size: 30px;
+  color: var(--darkblue);
+}
+
+@media screen and (max-width: 500px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 190px;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 50px; */
+    width: 100%;
+    /* margin-top: 20px; */
+  }
+
+  .title-picture{
+    width: 90%;
+    margin: auto;
+    height: 0px;
+  }
+
+  .title{
+    margin-bottom: 20px;
+  }
+
+  .content{
+    width: 90%;
+    margin: auto;
+  }
+  
+}

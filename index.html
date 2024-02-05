@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title-picture">
+            <div class="title">
+                <h1>AGE CALCULATOR</h1>
+            </div>
+            <div class="hero">
+                <img src="birth-day.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="content">
+            
+            <div class="title-input">
+                <img src="calendar.jpg" alt="calendar">
+                <h2>Your Date Of Birth</h2>
+            </div>
+            
+            <div class="input">
+                <div class="input-birth">
+                    <input type="number" id="day" placeholder="DD">
+                    <p>Day</p>
+                    <small class="error-day"></small>
+                </div>
+                <div class="input-birth">
+                    <input type="number" id="month" placeholder="MM">
+                    <p>Month</p>
+                    <small class="error-month"></small>
+                </div>
+                <div class="input-birth">
+                    <input type="number" id="year" placeholder="YYYY">
+                    <p>Year</p>
+                    <small class="error-year"></small>
+                </div>
+            </div>
+            
+            <div class="title-output">
+                <img src="growth.jpg" alt="">
+                <h2>Your Age Till Today</h2>
+            </div>
+            
+            <div class="output">
+                <div class="output-birth">
+                    <span class="output-year">--</span>
+                    <h3> Years</h3>
+                </div>
+                <div class="output-birth">    
+                    <span class="output-month">--</span>
+                    <h3> Months</h3>
+                </div>
+                <div class="output-birth">
+                    <span class="output-day">--</span>
+                    <h3>Days</h3>
+                </div>
+            </div>
+            
+            <button class="submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/51e8734cac.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
