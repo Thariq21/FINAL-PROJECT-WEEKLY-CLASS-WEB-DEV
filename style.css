@@ -35,9 +35,11 @@ input::-webkit-inner-spin-button {
 } */
 
 :root {
-  --darkblue: rgb(52,74,139);
-  --broken-white: rgb(232,228,228);
-  --white: rgb(232,228,228);
+  --white: #fffffe;
+  --darkblue: #094067;
+  --grey: #5f6c7b;
+  --skyblue: #3da9fc;
+  --lightgrey:#90b4ce;
 }
 
 *{
@@ -62,9 +64,10 @@ body{
 }
 
 .title, .hero, .content{
-  background-color: white;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px;
 }
 
 .title-picture{
@@ -102,7 +105,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: var(--darkblue);
+  color: black;
 }
 
 .input-birth{
@@ -127,10 +130,10 @@ body{
   font-size: 25px;
   font-weight: bold;
   border-radius: 10px;
-  background-color: var(--broken-white);
+  background-color: var(--lightgrey);
   transition: ease-in-out 0.2s;
   cursor: pointer;
-  color: var(--darkblue);
+  color: black;
 }
 
 .input-birth input:hover{
@@ -183,7 +186,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: var(--darkblue);
+  color: black;
 }
 
 .output-birth{
@@ -200,7 +203,7 @@ body{
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  background-color: var(--broken-white);
+  background-color: var(--lightgrey);
 }
 
 .output-birth h3{
@@ -217,21 +220,17 @@ small{
 
 .submit-btn{
   width: 100%;
-  background-color: var(--broken-white);
+  background-color: var(--button);
   padding: 5px;
   border: none;
-  border: 2px solid transparent;
+  border: 2px solid var(--darkblue);
   border-radius: 20px;
   cursor: pointer;
 }
 
-.submit-btn:hover{
-  border: 2px solid var(--darkblue);
-}
-
 i{
   font-size: 30px;
-  color: var(--darkblue);
+  color: var(--button-text);
 }
 
 @media screen and (max-width: 500px) {
@@ -242,9 +241,7 @@ i{
     gap: 190px;
     align-items: center;
     justify-content: space-between;
-    /* padding: 50px; */
     width: 100%;
-    /* margin-top: 20px; */
   }
 
   .title-picture{
@@ -262,4 +259,19 @@ i{
     margin: auto;
   }
   
+}
+
+@media screen and (min-width: 350px) {
+  .title-output img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-input h2{
+    font-size: 20px;
+  }
+
+  .title-output h2 {
+    font-size: 20px;
+  }
 }
