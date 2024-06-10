@@ -136,6 +136,21 @@ body{
   color: black;
 }
 
+/*support google chrome*/
+.input-birth input::-webkit-input-placeholder{
+	color: rgb(43, 41, 41);
+}
+ 
+/*support mozilla*/
+.input-birth input::-moz-input-placeholder{
+	color: rgb(43, 41, 41);
+}
+ 
+/*support internet explorer*/
+.input-birth input::-ms-input-placeholder{
+	color: rgb(43, 41, 41);
+}
+
 .input-birth input:hover{
   /* outline: 2px solid var(--darkblue); */
   border: 2px solid var(--darkblue);
